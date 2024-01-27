@@ -1,0 +1,11 @@
+appender:
+  out:
+    type: Console
+    name: out
+    layout:
+      type: PatternLayout
+      pattern: [%30.30t] %-30.30c{1} %-5p %m%n
+rootLogger:
+  level: INFO
+  appenderRef:
+    out.ref: out

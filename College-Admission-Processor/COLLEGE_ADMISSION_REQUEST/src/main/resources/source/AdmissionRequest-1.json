@@ -1,0 +1,11 @@
+{
+  "requestId" : null,
+  "firstName" : "Can",
+  "lastName" : "Yaman",
+  "dateOfBirth" : "28-12-1973",
+  "email" : "can.yaman@gmail.com",
+  "hallTicketNumber" : 123457999,
+  "intermediateMarks" : 975,
+  "interestedStream" : "Information Technology",
+  "status" : "YET TO PROCESS"
+}

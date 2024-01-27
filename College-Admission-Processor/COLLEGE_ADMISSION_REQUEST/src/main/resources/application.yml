@@ -1,0 +1,29 @@
+server.port : 8083
+camel:
+  sourceLocation : file:src/main/resources/source
+  destinationLocation1: file:src/main/resources/Destination
+  component:
+    kafka:
+      brokers: localhost:9092
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: College_Admin
+    password: admin
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: com.requestProducer.serdes.CollegeAdmissionSerializer
+    consumer:
+      group-id: admission-group
+      auto-offset-reset: latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: com.requestProducer.serdes.CollegeAdmissionDeserializer
+

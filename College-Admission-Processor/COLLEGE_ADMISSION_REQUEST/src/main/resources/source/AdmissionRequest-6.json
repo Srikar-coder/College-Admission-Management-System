@@ -1,0 +1,11 @@
+{
+  "requestId" : null,
+  "firstName" : "Alberto",
+  "lastName" : "Del Rio",
+  "dateOfBirth" : "28-12-1973",
+  "email" : "rio.albert-3@gmail.com",
+  "hallTicketNumber" : 523458999,
+  "intermediateMarks" : 975,
+  "interestedStream" : "Information Technology",
+  "status" : "YET TO PROCESS"
+}
